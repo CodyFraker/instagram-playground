@@ -12,7 +12,7 @@ namespace Insta.Graph.API.Logic
     {
         #region private vars
 
-        private string baseUrl = "https://graph.facebook.com/v3.2/17841408385455309?fields=";
+        private string baseUrl = "https://graph.facebook.com/v5.0/17841421626976288?fields=";
         private string access_token = "";
         private string _token = string.Empty;
         private string _impressionInsightDescription = "impressions";

@@ -260,3 +260,4 @@ paket-files/
 __pycache__/
 *.pyc
 /InstagramPlayground/Insta.Graph.Web.Client
+InstagramPlayground/InstagramPlayground.sln
