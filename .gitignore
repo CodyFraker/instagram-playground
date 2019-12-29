@@ -261,3 +261,5 @@ __pycache__/
 *.pyc
 /InstagramPlayground/Insta.Graph.Web.Client
 InstagramPlayground/InstagramPlayground.sln
+InstagramPlayground/Insta.Graph.API/Properties/Resources.Designer.cs
+InstagramPlayground/Insta.Graph.API/Properties/Resources.resx
