@@ -12,7 +12,11 @@ namespace Insta.Graph.API.Logic
     {
         #region private vars
 
-        private string baseUrl = "https://graph.facebook.com/v5.0/17841421626976288?fields=";
+        private string baseUrl = "https://graph.facebook.com/v5.0/";
+        private string apiVersion = "v5.0";
+        private ulong instagramID = 17841421626976288;
+        private readonly string fields = "?fields=";
+        private readonly string accToken = "&access_token=";
         private string access_token = "";
         private string _token = string.Empty;
         private string _impressionInsightDescription = "impressions";
@@ -52,7 +56,7 @@ namespace Insta.Graph.API.Logic
             // convert to DTOs and return
 
             string mediaFields = "media%7Bmedia_url%2Cmedia_type%2Ccomments_count%2Clike_count%2Ctimestamp%2Cpermalink%2Ccaption%7D";
-            string mediaSearchUrl = this.baseUrl + mediaFields + "&access_token=" + _token;
+            string mediaSearchUrl = $"{this.baseUrl}/{apiVersion}/{instagramID}{fields}{mediaFields}{accToken}{_token}";
 
             List<InstagramResult> list = new List<InstagramResult>();
 
