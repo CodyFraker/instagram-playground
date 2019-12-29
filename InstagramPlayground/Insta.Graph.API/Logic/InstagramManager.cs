@@ -17,7 +17,7 @@ namespace Insta.Graph.API.Logic
         private ulong instagramID = 17841421626976288;
         private readonly string fields = "?fields=";
         private readonly string accToken = "&access_token=";
-        private string access_token = "";
+        private string access_token = Environment.GetEnvironmentVariable("ACCESS_TOKEN");
         private string _token = string.Empty;
         private string _impressionInsightDescription = "impressions";
 
